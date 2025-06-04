@@ -44,8 +44,32 @@ export default function Portfolio() {
         }}
       />
 
-      {/* Right Side Social Links */}
-      <div className="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-8 z-10">
+      {/* Mobile Navigation - Top */}
+      <nav className="lg:hidden fixed top-0 left-0 right-0 bg-gray-50/95 backdrop-blur-sm border-b border-gray-200 z-20 px-4 py-4">
+        <div className="flex justify-center items-center space-x-8">
+          <Link
+            href="/about"
+            className="text-base font-medium text-gray-700 tracking-wider hover:text-gray-800 hover:font-bold transition-all cursor-pointer"
+          >
+            ABOUT
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/vivekdhiman2963/?originalSubdomain=in"
+            className="text-base font-medium text-gray-600 tracking-wider hover:text-gray-800 hover:font-bold transition-all cursor-pointer"
+          >
+            LINKEDIN
+          </Link>
+          <Link
+            href="/projects"
+            className="text-base font-medium text-gray-600 tracking-wider hover:text-gray-800 hover:font-bold transition-all cursor-pointer"
+          >
+            PROJECTS
+          </Link>
+        </div>
+      </nav>
+
+      {/* Desktop Navigation - Right Side */}
+      <div className="hidden lg:flex fixed right-6 top-1/2 -translate-y-1/2 flex-col items-center space-y-8 z-10">
         <Link
           href="/about"
           className="text-lg font-medium text-gray-700 tracking-wider hover:text-gray-800 hover:font-bold transition-all cursor-pointer"
@@ -54,9 +78,7 @@ export default function Portfolio() {
           ABOUT
         </Link>
         <Link
-         
           href="https://www.linkedin.com/in/vivekdhiman2963/?originalSubdomain=in"
-          
           className="text-lg font-medium text-gray-600 tracking-wider hover:text-gray-800 hover:font-bold transition-all cursor-pointer"
           style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
         >
@@ -72,7 +94,7 @@ export default function Portfolio() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-8 py-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-8 py-8 pt-24 lg:pt-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="space-y-8">
             <div>
@@ -88,8 +110,8 @@ export default function Portfolio() {
               <p className="text-gray-600 text-lg leading-relaxed">
                 Hello! I'm a backend engineer. I'm constantly learning and
                 coding to build efficient, reliable systems behind the scenes.
-                For me, turning passion into a profession isn’t just rewarding —
-                it’s what drives me every day.
+                For me, turning passion into a profession isn't just rewarding —
+                it's what drives me every day.
               </p>
             </div>
           </div>
