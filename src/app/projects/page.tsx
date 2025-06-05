@@ -36,34 +36,37 @@ export default function Projects() {
       />
 
       {/* Navigation */}
-      <nav className="relative z-20 p-6">
+      <nav className="relative z-20 p-4 sm:p-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold hover:text-gray-600 transition-colors">
+          <Link href="/" className="text-lg sm:text-xl font-bold hover:text-gray-600 transition-colors">
             ← Back
           </Link>
-          
         </div>
       </nav>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-8 py-6">
-        <h1 className="text-6xl font-bold text-black mb-12">Projects</h1>
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-8 sm:mb-12">
+          Projects
+        </h1>
 
-        <div className="space-y-8">
+        <div className="space-y-4 sm:space-y-6 lg:space-y-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex items-center justify-between p-6 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+              className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-6 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow space-y-3 sm:space-y-0"
             >
-              <h2 className="text-2xl font-semibold text-gray-800">{project.name}</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 break-words">
+                {project.name}
+              </h2>
               <a
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-gray-600 hover:text-black transition-colors"
+                className="flex items-center justify-center sm:justify-start space-x-2 text-gray-600 hover:text-black transition-colors py-2 sm:py-0 text-sm sm:text-base"
               >
                 <span>View on GitHub</span>
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4 flex-shrink-0" />
               </a>
             </div>
           ))}
