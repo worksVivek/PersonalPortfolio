@@ -98,8 +98,8 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl text-gray-600 mb-4 font-normal">
-                Hello web cowboy,
+              <h2 className="text-xl text-gray-600 ml-1 mb-2 font-normal">
+                Engineer.Builder.Thinker
               </h2>
               <h1 className="text-6xl lg:text-8xl font-bold text-black leading-none">
                 I'm Vivek
@@ -108,7 +108,7 @@ export default function Portfolio() {
             </div>
             <div className="max-w-md">
               <p className="text-gray-600 text-lg leading-relaxed">
-                Hello! I'm a backend engineer. I'm constantly learning and
+                I'm a backend engineer. I'm constantly learning and
                 coding to build efficient, reliable systems behind the scenes.
                 For me, turning passion into a profession isn't just rewarding —
                 it's what drives me every day.
