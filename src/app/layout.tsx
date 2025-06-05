@@ -10,7 +10,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: "Vivek - Portfolio",
-  description: "UX/UI Designer Portfolio",
+  description: "",
 }
 
 export default function RootLayout({
